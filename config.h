@@ -108,45 +108,7 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 1.0;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
- 
-  /* 8 normal colors */
-  [0] = "#1F2229", /* black   */
-  [1] = "#D41919", /* red     */
-  [2] = "#5EBDAB", /* green   */
-  [3] = "#FEA44C", /* yellow  */
-  [4] = "#367BF0", /* blue    */
-  [5] = "#9755B3", /* magenta */
-  [6] = "#49AEE6", /* cyan    */
-  [7] = "#E6E6E6", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#198388", /* black   */
-  [9]  = "#EC0101", /* red     */
-  [10] = "#47D4B9", /* green   */
-  [11] = "#FF8A18", /* yellow  */
-  [12] = "#277FFF", /* blue    */
-  [13] = "#962AC3", /* magenta */
-  [14] = "#05A1F7", /* cyan    */
-  [15] = "#FFFFFF", /* white   */
-
-  /* special colors */
-  //[256] = "#23252E", /* background */
-  [256] = "#1F2229", /* background */
-  [257] = "#FFFFFF", /* foreground */
-
-};
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+#include "onedark.h"
 
 /*
  * Default shape of cursor
