@@ -108,7 +108,8 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 1.0;
 
-#include "onedark.h"
+// #include "onedark.h"
+#include "catppuccin.h"
 
 /*
  * Default shape of cursor
